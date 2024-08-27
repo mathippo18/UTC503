@@ -83,6 +83,17 @@ div[hidden] {
                     x.style.display = "block";
                 }
                 }
+                function loadCodeOne() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'JS/1JS.js', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                document.getElementById('codeBlock1').textContent = xhr.responseText;
+                document.getElementById('codeBlock1').style.display = 'block';
+            }
+        };
+        xhr.send();
+    }
         </script>
         <div id="part 1" hidden>
             <p>Exercice: Écrire un programme qui effectue les actions suivantes :
@@ -91,6 +102,9 @@ div[hidden] {
                 Assigne les valeurs 5 à a, 10 à b, et la somme de a et b à c.
                 Affiche la valeur de c dans la console.</p>
                 <button onclick="un()">Execution</button>
+                <button onclick="loadCodeOne()">Afficher le code</button>
+                <pre id="codeBlock1" style="display:none; background-color:#f4f4f4; padding:10px; border-radius:5px;"></pre>
+
         </div>
         <h2><button onclick="PartTwo()">2. Assignation ou affectation</button></h2>
         <script>
@@ -102,6 +116,17 @@ div[hidden] {
                     x.style.display = "block";
                 }
                 }
+                function loadCodeTwo() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'JS/2JS.js', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                document.getElementById('codeBlock2').textContent = xhr.responseText;
+                document.getElementById('codeBlock2').style.display = 'block';
+            }
+        };
+        xhr.send();
+    }
         </script>
         <div id="part 2" hidden>
             <p>Exercice: Écrire un programme qui fait les opérations suivantes :
@@ -111,6 +136,8 @@ div[hidden] {
                 Assigne à x la valeur de y divisée par 4.
                 Affiche x et y dans la console.</p>
                 <button onclick="deux()">Execution</button>
+                <button onclick="loadCodeTwo()">Afficher le code</button>
+                <pre id="codeBlock2" style="display:none; background-color:#f4f4f4; padding:10px; border-radius:5px;"></pre>
             
         </div>
         <h2><button onclick="PartThree()">3. Instruction conditionnelle</button></h2>
@@ -123,6 +150,17 @@ div[hidden] {
                     x.style.display = "block";
                 }
                 }
+                function loadCodeThree() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'JS/3JS.js', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                document.getElementById('codeBlock3').textContent = xhr.responseText;
+                document.getElementById('codeBlock3').style.display = 'block';
+            }
+        };
+        xhr.send();
+    }
         </script>
         <div id="part 3" hidden>
             <p>Exercice 1 :
@@ -136,6 +174,8 @@ div[hidden] {
                 
                 Instructions : Déclarez trois variables x, y, et z et assignez-leur des valeurs numériques. Utilisez des instructions conditionnelles (if, else if, else) pour déterminer lequel des trois nombres est le plus grand. Affichez le résultat avec un message, par exemple : “Le plus grand nombre est x.”</p>
                 <button onclick="trois()">Execution</button>
+                <button onclick="loadCodeThree()">Afficher le code</button>
+                <pre id="codeBlock3" style="display:none; background-color:#f4f4f4; padding:10px; border-radius:5px;"></pre>
             </div>
         <h2><button onclick="PartFour()">4. La boucle</button></h2>
         <script>
@@ -147,6 +187,17 @@ div[hidden] {
                     x.style.display = "block";
                 }
                 }
+                function loadCodeFour() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'JS/4JS.js', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                document.getElementById('codeBlock4').textContent = xhr.responseText;
+                document.getElementById('codeBlock4').style.display = 'block';
+            }
+        };
+        xhr.send();
+    }
         </script>
         <div id="part 4" hidden>
             <p>Exercice 1 :
@@ -172,6 +223,8 @@ div[hidden] {
                 Affichez un message après chaque tentative indiquant si le nombre est correct ou incorrect.
                 Si le nombre est trouvé, sortez de la boucle.</p>
                 <button onclick="quatre()">Execution</button>
+                <button onclick="loadCodeFour()">Afficher le code</button>
+                <pre id="codeBlock4" style="display:none; background-color:#f4f4f4; padding:10px; border-radius:5px;"></pre>
         </div>
         <h2><button onclick="PartFive()">5. Les branchements</button></h2>
         <script>
@@ -183,6 +236,17 @@ div[hidden] {
                     x.style.display = "block";
                 }
                 }
+                function loadCodeFive() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'JS/5JS.js', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                document.getElementById('codeBlock5').textContent = xhr.responseText;
+                document.getElementById('codeBlock5').style.display = 'block';
+            }
+        };
+        xhr.send();
+    }
         </script>
         <div id="part 5" hidden>
             <p>Exercice 1 :
@@ -203,6 +267,8 @@ div[hidden] {
                 Affichez le résultat.
                 Gérez les erreurs (par exemple, division par zéro).</p>
                 <button onclick="cinq()">Execution</button>
+                <button onclick="loadCodeFive()">Afficher le code</button>
+                <pre id="codeBlock5" style="display:none; background-color:#f4f4f4; padding:10px; border-radius:5px;"></pre>
         </div>
     </body>
 </html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Site Exo JS</title>
+        <style>
+            /* Style global pour le corps */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Style pour le titre principal */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style pour les titres de chaque section */
+h2 {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Style pour les paragraphes d'instructions */
+p {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Style pour les boutons */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Changer la couleur du bouton au survol */
+button:hover {
+    background-color: #218838;
+}
+
+/* Cacher les sections au début */
+div[hidden] {
+    display: none;
+}
+
+        </style>
+    </head>
+    <body>
+        <script src="JS/1JS.js"></script>
+        <script src="JS/2JS.js"></script>
+        <script src="JS/3JS.js"></script>
+        <script src="JS/4JS.js"></script>
+        <script src="JS/5JS.js"></script>
+        
+        <h1>Exercice JS UTC 503</h1>
+        <h2><button onclick="PartOne()">1. Séquence d'instructions</button></h2>
+        <script>
+            function PartOne() {
+                var x = document.getElementById("part 1");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+                }
+        </script>
+        <div id="part 1" hidden>
+            <p>Exercice: Écrire un programme qui effectue les actions suivantes :
+
+                Déclare trois variables : a, b, et c.
+                Assigne les valeurs 5 à a, 10 à b, et la somme de a et b à c.
+                Affiche la valeur de c dans la console.</p>
+                <button onclick="un()">Execution</button>
+        </div>
+        <h2><button onclick="PartTwo()">2. Assignation ou affectation</button></h2>
+        <script>
+            function PartTwo() {
+                var x = document.getElementById("part 2");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+                }
+        </script>
+        <div id="part 2" hidden>
+            <p>Exercice: Écrire un programme qui fait les opérations suivantes :
+
+                Déclare une variable x avec la valeur 8.
+                Multiplie x par 2 et assigne le résultat à une nouvelle variable y.
+                Assigne à x la valeur de y divisée par 4.
+                Affiche x et y dans la console.</p>
+                <button onclick="deux()">Execution</button>
+            
+        </div>
+        <h2><button onclick="PartThree()">3. Instruction conditionnelle</button></h2>
+        <script>
+            function PartThree() {
+                var x = document.getElementById("part 3");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+                }
+        </script>
+        <div id="part 3" hidden>
+            <p>Exercice 1 :
+                Écrire un programme qui fait les opérations suivantes :
+                
+                Demande à l'utilisateur d'entrer un nombre via prompt().
+                Si le nombre est supérieur à 10, affiche “Grand nombre” dans la console.
+                Sinon, affiche “Petit nombre”.
+                Exercice 2 :
+                Écrivez un programme qui détermine le plus grand de trois nombres et affiche un message approprié selon le cas.
+                
+                Instructions : Déclarez trois variables x, y, et z et assignez-leur des valeurs numériques. Utilisez des instructions conditionnelles (if, else if, else) pour déterminer lequel des trois nombres est le plus grand. Affichez le résultat avec un message, par exemple : “Le plus grand nombre est x.”</p>
+                <button onclick="trois()">Execution</button>
+            </div>
+        <h2><button onclick="PartFour()">4. La boucle</button></h2>
+        <script>
+            function PartFour() {
+                var x = document.getElementById("part 4");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+                }
+        </script>
+        <div id="part 4" hidden>
+            <p>Exercice 1 :
+                Écrire un programme qui affiche les nombres de 1 à 5 en utilisant une boucle for.
+                
+                Exercice 2 :
+                Écrivez un programme qui génère les 10 premiers nombres de la séquence de Fibonacci et les affiche dans la console.
+                
+                Instructions :
+                
+                Utilisez une boucle for pour itérer 10 fois.
+                Initialisez deux variables a et b avec les valeurs 0 et 1.
+                À chaque itération, affichez la valeur actuelle de a.
+                Mettez à jour les valeurs de a et b pour obtenir le prochain nombre de Fibonacci.
+                Exercice 3 :
+                Écrivez un programme qui demande à l'utilisateur de deviner un nombre secret entre 1 et 10. L'utilisateur a un nombre limité de tentatives (par exemple, 3). Le programme doit indiquer si la réponse est correcte ou non après chaque tentative, et arrêter si le nombre est trouvé ou si les tentatives sont épuisées.
+                
+                Instructions :
+                
+                Déclarez une variable pour le nombre secret (par exemple const secret = 7).
+                Utilisez une boucle while pour limiter le nombre de tentatives (par exemple, 3).
+                Utilisez un branchement (if) pour vérifier si la réponse de l'utilisateur est correcte ou non.
+                Affichez un message après chaque tentative indiquant si le nombre est correct ou incorrect.
+                Si le nombre est trouvé, sortez de la boucle.</p>
+                <button onclick="quatre()">Execution</button>
+        </div>
+        <h2><button onclick="PartFive()">5. Les branchements</button></h2>
+        <script>
+            function PartFive() {
+                var x = document.getElementById("part 5");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+                }
+        </script>
+        <div id="part 5" hidden>
+            <p>Exercice 1 :
+                Écrire un programme qui fait les opérations suivantes :
+                
+                Déclare un tableau numbers contenant les nombres 1, 2, 3, 4, 5.
+                Parcourt le tableau à l'aide d'une boucle.
+                Si le nombre est 3, sort de la boucle immédiatement.
+                Sinon, affiche le nombre dans la console.
+                Exercice 2 :
+                Écrivez un programme qui fonctionne comme une calculatrice simple. Il doit demander à l'utilisateur deux nombres, puis l'opération à effectuer (addition, soustraction, multiplication, division) et afficher le résultat. Le programme doit continuer jusqu'à ce que l'utilisateur choisisse de quitter.
+                
+                Instructions :
+                
+                Utilisez une boucle while pour que le programme continue à fonctionner jusqu'à ce que l'utilisateur saisisse une commande pour quitter (par exemple “q”).
+                Demandez à l'utilisateur d'entrer deux nombres et l'opération à effectuer.
+                Utilisez des conditions pour effectuer l'opération demandée.
+                Affichez le résultat.
+                Gérez les erreurs (par exemple, division par zéro).</p>
+                <button onclick="cinq()">Execution</button>
+        </div>
+    </body>
+</html>
